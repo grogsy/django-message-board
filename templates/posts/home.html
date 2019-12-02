@@ -1,0 +1,11 @@
+<h1>Message board template</h1>
+<ul>
+    {% for post in object_list %}
+    <li>
+        <div>
+            <h1>{{post.title}}</h1>
+            <p>{{post.text}}</p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
